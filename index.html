@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Quotes Grid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f3f4f6, #dbeafe);
+      min-height: 100vh;
+    }
+
+    .quote-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 2px solid #ccc;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-size: 1.1rem;
+      color: #1f2937;
+      font-weight: 600;
+    }
+
+    .quote-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border-color: #60a5fa;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+        gap: 15px;
+      }
+
+      .quote-card {
+        padding: 15px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-card">
+    <p>"Believe in yourself!"</p>
+  </div>
+  <div class="quote-card">
+    <p>"Keep learning every day."</p>
+  </div>
+  <div class="quote-card">
+    <p>"Stay positive and happy."</p>
+  </div>
+  <div class="quote-card">
+    <p>"Work hard, dream big."</p>
+  </div>
+  <div class="quote-card">
+    <p>"Embrace challenges."</p>
+  </div>
+  <div class="quote-card">
+    <p>"Be kind to everyone."</p>
+  </div>
+  <div class="quote-card">
+    <p>"Stay curious."</p>
+  </div>
+  <div class="quote-card">
+    <p>"Create and innovate."</p>
+  </div>
+  <div class="quote-card">
+    <p>"Enjoy the journey."</p>
+  </div>
+</body>
+</html>
+
